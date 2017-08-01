@@ -1,14 +1,8 @@
 /* ==========================================================================
    Section comment block
    ========================================================================== */
-/**
- * Short description
- *
- * @Main
- *
- * TODO:
- *
- */
+
+/* Main  ========================================================================== */
 body {
     line-height: 1.2;
     height: 100%;
@@ -16,7 +10,6 @@ body {
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
 }
-
 ol, ul {
     list-style: none;
 }
@@ -24,41 +17,39 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-
 blockquote, q {
     quotes: none;
 }
-
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
 
-
-
+/* Custom tags  ========================================================================== */
 .content {
     margin-top: 50px;
     color: #fff;
 }
-
 .logo img {
     display: inline-block;
 }
-
 .logo h2 {
     font-family: 'Lobster', cursive;
     font-size: 34px;
     padding-top: 40px;
 }
-
-#countdown {
-    text-align: center;
-    margin: 110px 0px 69px;
-    min-height: 104px;
+.input-group-addon {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.section-padding {
+    padding: 60px;
 }
 
+/* Custom tags  ========================================================================== */
 #countdown > div {
     width: 100px;
     height: 100px;
@@ -73,241 +64,24 @@ q:before, q:after {
     border-radius: 5px;
     margin-bottom: 10px;
 }
-
 #countdown > div > span {
     display: block;
 }
-
-.input-group-addon {
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+#countdown {
+    text-align: center;
+    margin: 30px 0px 30px;
+    min-height: 104px;
 }
 
-.sub-p {
-    font-size: 14px;
-    padding: 5px 0px 15px;
-}
-
-.social ul li {
-    display: inline-block;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    margin-right: 10px;
-}
-
-.section-padding {
-    padding: 60px;
-}
-
-.about-title h2 {
-    font-size: 22px;
-    padding-bottom: 30px;
-}
-
+/* Images  ========================================================================== */
 .img {
     margin-top: 30px;
 }
-
 .img i {
     font-size: 44px;
 }
 
-.subcription-info {
-    width: 40%;
-    margin: 0 auto 50px;
-}
-
-.abt-hd {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px 0px 15px;
-}
-/* Contact
-   ========================================================================== */
-.contact-title i {
-    color: #FFFFFF;
-    font-size: 1.8em;
-    text-align: right;
-    display: block;
-    padding: 65px 0 0 0;
-}
-
-.contact-title h2 {
-    font-size: 1.2em;
-    font-weight: 600;
-    color: #fff;
-    text-align: right;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 15px 0px 30px;
-}
-
-.contact-title p {
-    text-align: right;
-    margin-top: -5px;
-    color: rgba(236, 240, 241, 0.9);
-    font-size: 13px;
-    word-spacing: 1px;
-    line-height: 25px;
-    padding-bottom: 30px;
-}
-
-.contact input[type="text"], .contact input[type="email"] {
-    width: 100%;
-    background: transparent;
-    border: 1px solid #EDEDED;
-    margin-bottom: 20px;
-    font-size: 13px;
-    outline: none;
-    color: #ffffff;
-}
-#contact-info {
-    padding: 0px 0px 40px;
-}
-
-.contact textarea {
-    width: 100%;
-    background: transparent;
-    font-size: 13px;
-    padding: 15px;
-    height: 100px;
-    border: 1px solid #EDEDED;
-    outline: none;
-    resize: none;
-    margin-bottom: 5px;
-    color: #ffffff;
-}
-
-.contact-submit {
-    background-color: #24B7A4;
-    border: 2px solid #24B7A4;
-    color: #FFFFFF;
-    width: 100%;
-    display: block;
-    word-spacing: 1px;
-    outline: none;
-    margin: 0 auto;
-    font-size: 13px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    font-weight: 700;
-    padding: 10px;
-    -webkit-transition: all 0.3s ease-in-out !important;
-    -moz-transition: all 0.3s ease-in-out !important;
-    -ms-transition: all 0.3s ease-in-out !important;
-    -o-transition: all 0.3s ease-in-out !important;
-    transition: all 0.3s ease-in-out !important;
-}
-/* Social
-   ========================================================================== */
-.social a i {
-    color: #fff;
-    display: block;
-    line-height: 48px;
-
-}
-
-.social a:hover {
-    text-decoration: none;
-}
-
-/* Validation
-   ========================================================================== */
-.validation {
-    color: red;
-    display: none;
-    margin: 0 0 20px;
-    font-weight: 400;
-    font-size: 13px;
-}
-/* Messages
-   ========================================================================== */
-#sendmessage {
-    color: green;
-    border: 1px solid green;
-    display: none;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-#errormessage {
-    color: red;
-    display: none;
-    border: 1px solid red;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-#sendmessage.show, #errormessage.show, .show {
-    display: block;
-}
-
-footer {
-    padding: 30px;
-    color: #fff;
-    text-align: center;
-    background-color: #242830;
-}
-
-.footer a {
-    color: #24B7A4;
-}
-
-.credits {
-    padding-top: 10px;
-}
-
-.subscribe_form {
-    position: relative;
-}
-
-.subscribe_form .subscribe {
-    right: 0px;
-    top: 0px;
-    width: 160px;
-    height: 50px;
-    position: absolute;
-    color: #FFF;
-    background-color: #24B7A4;
-    border: medium none;
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 0px;
-    font-family: "Roboto Slab", serif;
-    font-size: 18px;
-}
-
-h2.subs-title {
-    font-family: 'Lobster', cursive;
-    font-size: 34px;
-    padding: 30px 0px 20px;
-}
-
-.subscribe_form input {
-    height: 50px;
-    border: none;
-    width: 100%;
-    font-family: 'Lato', sans-serif;
-    font-size: 15px;
-    border-radius: 30px;
-    color: #000;
-}
-
-.subscribe_form input[type=email] {
-    padding-left: 30px;
-}
-
-/**********************************
-Media Queries
-***********************************/
+/* Media  ========================================================================== */
 @media (min-width: 501px) and (max-width: 901px) {
     .contact-title {
         padding: 15px;
@@ -350,4 +124,194 @@ Media Queries
         width: 80%;
         margin: 0 auto;
     }
+}
+
+/* Validation   ========================================================================== */
+.validation {
+    color: red;
+    display: none;
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+/* Messages  ========================================================================== */
+#sendmessage {
+    color: green;
+    border: 1px solid green;
+    display: none;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+#errormessage {
+    color: red;
+    display: none;
+    border: 1px solid red;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+#sendmessage.show, #errormessage.show, .show {
+    display: block;
+}
+
+/* About Section  ========================================================================== */
+.about-title h2 {
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+.about-heading {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0px 15px;
+}
+
+/* Contact Section  ========================================================================== */
+.contact-title i {
+    color: #FFFFFF;
+    font-size: 1.8em;
+    text-align: right;
+    display: block;
+    padding: 65px 0 0 0;
+}
+.contact-title h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px 0px 30px;
+}
+.contact-title p {
+    text-align: right;
+    margin-top: -5px;
+    color: rgba(236, 240, 241, 0.9);
+    font-size: 13px;
+    word-spacing: 1px;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+.contact input[type="text"], .contact input[type="email"] {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #EDEDED;
+    margin-bottom: 20px;
+    font-size: 13px;
+    outline: none;
+    color: #ffffff;
+}
+#contact-info {
+    padding: 0px 0px 40px;
+}
+.contact textarea {
+    width: 100%;
+    background: transparent;
+    font-size: 13px;
+    padding: 15px;
+    height: 100px;
+    border: 1px solid #EDEDED;
+    outline: none;
+    resize: none;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+.contact-submit {
+    background-color: #24B7A4;
+    border: 2px solid #24B7A4;
+    color: #FFFFFF;
+    width: 100%;
+    display: block;
+    word-spacing: 1px;
+    outline: none;
+    margin: 0 auto;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: 700;
+    padding: 10px;
+    -webkit-transition: all 0.3s ease-in-out !important;
+    -moz-transition: all 0.3s ease-in-out !important;
+    -ms-transition: all 0.3s ease-in-out !important;
+    -o-transition: all 0.3s ease-in-out !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* Social Section  ========================================================================== */
+.social a i {
+    color: #fff;
+    line-height: 45px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 75%;
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+}
+.social a:hover {
+    text-decoration: none;
+}
+.social ul {
+    padding-right: 80px; /* Fixes Chrome Issue*/
+}
+
+/* Footer Section  ========================================================================== */
+footer {
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    background-color: #242830;
+}
+.footer a {
+    color: #24B7A4;
+}
+.credits {
+    padding-top: 10px;
+}
+
+/* Subscribe Section  ========================================================================== */
+.subscribe_form {
+    position: relative;
+}
+.sub-p {
+    font-size: 14px;
+    padding: 5px 0px 15px;
+}
+.subscribe_form .subscribe {
+    right: 0px;
+    top: 0px;
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    color: #FFF;
+    background-color: #24B7A4;
+    border: medium none;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    font-family: "Roboto Slab", serif;
+    font-size: 18px;
+}
+h2.subs-title {
+    font-family: 'Courgette';
+    font-size: 34px;
+    padding: 30px 0px 20px;
+}
+.subscribe_form input {
+    height: 50px;
+    border: none;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    border-radius: 30px;
+    color: #000;
+}
+.subscribe_form input[type=email] {
+    padding-left: 30px;
+}
+.subcription-info {
+    width: 40%;
+    margin: 0 auto 50px;
 }
